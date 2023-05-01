@@ -1,6 +1,11 @@
 import json
-def load_candidates_from_json():
-    with open("candidates.json", "r", encoding="utf-8") as file:
+def load_candidates_from_json(path):
+    """
+    JSON Data loader
+    :param path: data-file path
+    :return data
+    """
+    with open("path", "r", encoding="utf-8") as file:
         data = json.load(file)
         candidates = {}
         for i in data:
